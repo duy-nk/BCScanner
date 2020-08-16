@@ -1,0 +1,199 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+ProcessException: ProcessException: Process exited abnormally:
+adb.exe: error: listener 'tcp:64964' not found
+  Command: C:\Users\admin\AppData\Local\Android\sdk\platform-tools\adb.exe -s 5f43ae9e forward --remove tcp:64964
+
+```
+#0      RunResult.throwException (package:flutter_tools/src/base/process.dart:172:5)
+#1      _DefaultProcessUtils.run (package:flutter_tools/src/base/process.dart:322:19)
+<asynchronous suspension>
+#2      _AndroidDevicePortForwarder.unforward (package:flutter_tools/src/android/android_device.dart:1198:24)
+#3      _AndroidDevicePortForwarder.dispose (package:flutter_tools/src/android/android_device.dart:1207:13)
+#4      AndroidDevice.dispose (package:flutter_tools/src/android/android_device.dart:743:27)
+#5      HotRunner.cleanupAtFinish (package:flutter_tools/src/run_hot.dart:1144:34)
+#6      ResidentRunner.waitForAppToFinish (package:flutter_tools/src/resident_runner.dart:1017:11)
+<asynchronous suspension>
+#7      HotRunner.attach (package:flutter_tools/src/run_hot.dart:321:22)
+#8      _rootRunUnary (dart:async/zone.dart:1192:38)
+#9      _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#10     _FutureListener.handleValue (dart:async/future_impl.dart:141:18)
+#11     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:682:45)
+#12     Future._propagateToListeners (dart:async/future_impl.dart:711:32)
+#13     Future._completeWithValue (dart:async/future_impl.dart:526:5)
+#14     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:36:15)
+#15     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:298:13)
+#16     ResidentRunner.refreshViews (package:flutter_tools/src/resident_runner.dart)
+#17     _rootRunUnary (dart:async/zone.dart:1192:38)
+#18     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#19     _FutureListener.handleValue (dart:async/future_impl.dart:141:18)
+#20     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:682:45)
+#21     Future._propagateToListeners (dart:async/future_impl.dart:711:32)
+#22     Future._completeWithValue (dart:async/future_impl.dart:526:5)
+#23     Future.wait.<anonymous closure> (dart:async/future.dart:402:22)
+#24     _rootRunUnary (dart:async/zone.dart:1192:38)
+#25     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#26     _FutureListener.handleValue (dart:async/future_impl.dart:141:18)
+#27     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:682:45)
+#28     Future._propagateToListeners (dart:async/future_impl.dart:711:32)
+#29     Future._completeWithValue (dart:async/future_impl.dart:526:5)
+#30     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:36:15)
+#31     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:298:13)
+#32     FlutterDevice.refreshViews (package:flutter_tools/src/resident_runner.dart)
+#33     _rootRunUnary (dart:async/zone.dart:1192:38)
+#34     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#35     _FutureListener.handleValue (dart:async/future_impl.dart:141:18)
+#36     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:682:45)
+#37     Future._propagateToListeners (dart:async/future_impl.dart:711:32)
+#38     Future._completeWithValue (dart:async/future_impl.dart:526:5)
+#39     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:36:15)
+#40     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:298:13)
+#41     VM.refreshViews (package:flutter_tools/src/vmservice.dart)
+#42     _rootRunUnary (dart:async/zone.dart:1192:38)
+#43     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#44     _FutureListener.handleValue (dart:async/future_impl.dart:141:18)
+#45     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:682:45)
+#46     Future._propagateToListeners (dart:async/future_impl.dart:711:32)
+#47     Future._completeWithValue (dart:async/future_impl.dart:526:5)
+#48     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:36:15)
+#49     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:298:13)
+#50     VM.invokeRpc (package:flutter_tools/src/vmservice.dart)
+#51     _rootRunUnary (dart:async/zone.dart:1192:38)
+#52     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#53     _FutureListener.handleValue (dart:async/future_impl.dart:141:18)
+#54     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:682:45)
+#55     Future._propagateToListeners (dart:async/future_impl.dart:711:32)
+#56     Future._completeWithValue (dart:async/future_impl.dart:526:5)
+#57     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:36:15)
+#58     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:298:13)
+#59     VM.invokeRpcRaw (package:flutter_tools/src/vmservice.dart)
+#60     _rootRunUnary (dart:async/zone.dart:1192:38)
+#61     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#62     _FutureListener.handleValue (dart:async/future_impl.dart:141:18)
+#63     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:682:45)
+#64     Future._propagateToListeners (dart:async/future_impl.dart:711:32)
+#65     Future._complete (dart:async/future_impl.dart:516:7)
+#66     _SyncCompleter.complete (dart:async/future_impl.dart:54:12)
+#67     Future.any.<anonymous closure> (dart:async/future.dart:461:45)
+#68     _rootRunUnary (dart:async/zone.dart:1192:38)
+#69     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#70     _FutureListener.handleValue (dart:async/future_impl.dart:141:18)
+#71     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:682:45)
+#72     Future._propagateToListeners (dart:async/future_impl.dart:711:32)
+#73     Future._complete (dart:async/future_impl.dart:516:7)
+#74     _SyncCompleter.complete (dart:async/future_impl.dart:54:12)
+#75     Client._handleSingleResponse (package:json_rpc_2/src/client.dart:189:25)
+#76     Client._handleResponse (package:json_rpc_2/src/client.dart:179:7)
+#77     _rootRunUnary (dart:async/zone.dart:1192:38)
+#78     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#79     _CustomZone.runUnaryGuarded (dart:async/zone.dart:987:7)
+#80     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:339:11)
+#81     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:266:7)
+#82     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:779:19)
+#83     _StreamController._add (dart:async/stream_controller.dart:655:7)
+#84     _StreamController.add (dart:async/stream_controller.dart:597:5)
+#85     Peer.listen.<anonymous closure> (package:json_rpc_2/src/peer.dart:102:36)
+#86     _rootRunUnary (dart:async/zone.dart:1192:38)
+#87     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#88     _CustomZone.runUnaryGuarded (dart:async/zone.dart:987:7)
+#89     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:339:11)
+#90     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:266:7)
+#91     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:134:11)
+#92     _MapStream._handleData (dart:async/stream_pipe.dart:234:10)
+#93     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:166:13)
+#94     _rootRunUnary (dart:async/zone.dart:1192:38)
+#95     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#96     _CustomZone.runUnaryGuarded (dart:async/zone.dart:987:7)
+#97     CastStreamSubscription._onData (dart:_internal/async_cast.dart:83:11)
+#98     _rootRunUnary (dart:async/zone.dart:1192:38)
+#99     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#100    _CustomZone.runUnaryGuarded (dart:async/zone.dart:987:7)
+#101    _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:339:11)
+#102    _BufferingStreamSubscription._add (dart:async/stream_impl.dart:266:7)
+#103    _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:134:11)
+#104    _ForwardingStream._handleData (dart:async/stream_pipe.dart:100:10)
+#105    _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:166:13)
+#106    _rootRunUnary (dart:async/zone.dart:1192:38)
+#107    _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#108    _CustomZone.runUnaryGuarded (dart:async/zone.dart:987:7)
+#109    _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:339:11)
+#110    _BufferingStreamSubscription._add (dart:async/stream_impl.dart:266:7)
+#111    _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:779:19)
+#112    _StreamController._add (dart:async/stream_controller.dart:655:7)
+#113    _StreamController.add (dart:async/stream_controller.dart:597:5)
+#114    new _WebSocketImpl._fromSocket.<anonymous closure> (dart:_http/websocket_impl.dart:1146:21)
+#115    _rootRunUnary (dart:async/zone.dart:1192:38)
+#116    _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#117    _CustomZone.runUnaryGuarded (dart:async/zone.dart:987:7)
+#118    _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:339:11)
+#119    _BufferingStreamSubscription._add (dart:async/stream_impl.dart:266:7)
+#120    _SinkTransformerStreamSubscription._add (dart:async/stream_transformers.dart:70:11)
+#121    _EventSinkWrapper.add (dart:async/stream_transformers.dart:17:11)
+#122    _WebSocketProtocolTransformer._messageFrameEnd (dart:_http/websocket_impl.dart:338:22)
+#123    _WebSocketProtocolTransformer.add (dart:_http/websocket_impl.dart:233:46)
+#124    _SinkTransformerStreamSubscription._handleData (dart:async/stream_transformers.dart:122:24)
+#125    _rootRunUnary (dart:async/zone.dart:1192:38)
+#126    _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#127    _CustomZone.runUnaryGuarded (dart:async/zone.dart:987:7)
+#128    _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:339:11)
+#129    _BufferingStreamSubscription._add (dart:async/stream_impl.dart:266:7)
+#130    _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:779:19)
+#131    _StreamController._add (dart:async/stream_controller.dart:655:7)
+#132    _StreamController.add (dart:async/stream_controller.dart:597:5)
+#133    _Socket._onData (dart:io-patch/socket_patch.dart:1982:41)
+#134    _rootRunUnary (dart:async/zone.dart:1196:13)
+#135    _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#136    _CustomZone.runUnaryGuarded (dart:async/zone.dart:987:7)
+#137    _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:339:11)
+#138    _BufferingStreamSubscription._add (dart:async/stream_impl.dart:266:7)
+#139    _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:779:19)
+#140    _StreamController._add (dart:async/stream_controller.dart:655:7)
+#141    _StreamController.add (dart:async/stream_controller.dart:597:5)
+#142    new _RawSocket.<anonymous closure> (dart:io-patch/socket_patch.dart:1527:33)
+#143    _NativeSocket.issueReadEvent.issue (dart:io-patch/socket_patch.dart:1019:14)
+#144    _microtaskLoop (dart:async/schedule_microtask.dart:43:21)
+#145    _startMicrotaskLoop (dart:async/schedule_microtask.dart:52:5)
+#146    _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+#147    _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:169:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, v1.17.4, on Microsoft Windows [Version 10.0.18362.900], locale en-US)
+    • Flutter version 1.17.4 at C:\flutter
+    • Framework revision 1ad9baa8b9 (3 weeks ago), 2020-06-17 14:41:16 -0700
+    • Engine revision ee76268252
+    • Dart version 2.8.4
+
+[!] Android toolchain - develop for Android devices (Android SDK version 29.0.3)
+    • Android SDK at C:\Users\admin\AppData\Local\Android\sdk
+    • Platform android-29, build-tools 29.0.3
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_212-release-1586-b04)
+    ✗ Android license status unknown.
+      Try re-installing or updating your Android SDK Manager.
+      See https://developer.android.com/studio/#downloads or visit visit https://flutter.dev/docs/get-started/install/windows#android-setup for detailed
+      instructions.
+
+[!] Android Studio (version 3.6)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    • Java version OpenJDK Runtime Environment (build 1.8.0_212-release-1586-b04)
+
+[✓] VS Code (version 1.46.1)
+    • VS Code at C:\Users\admin\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.12.1
+
+[✓] Connected device (1 available)
+    • RMX1811 • 5f43ae9e • android-arm64 • Android 8.1.0 (API 27)
+
+! Doctor found issues in 2 categories.
+```

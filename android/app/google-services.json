@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "52784498445",
+    "firebase_url": "https://cardvisitapp.firebaseio.com",
+    "project_id": "cardvisitapp",
+    "storage_bucket": "cardvisitapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52784498445:android:d324888383dfa3c6d81244",
+        "android_client_info": {
+          "package_name": "com.example.flutter_cardvisit_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52784498445-dqhek0g1oggv2qk2dshl9v71hff82tbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_cardvisit_app",
+            "certificate_hash": "a1a8b5d25fea763c42102adadbb0c7babea67769"
+          }
+        },
+        {
+          "client_id": "52784498445-ntcnc29iubsejdd9vrmrpq7mm3shoekt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnRkPgToUOD2h2J21LIy6atOdaP0LpeuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52784498445-ntcnc29iubsejdd9vrmrpq7mm3shoekt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
